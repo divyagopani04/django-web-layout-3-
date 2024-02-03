@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}   
+.bgsky{
+    background-color: #003366;
+    color: white;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.padding{
+    padding: 10px;
+}
+.spacer_top_bottom{
+    padding: 10px 50px;
+}
+.spacer{
+    padding-right:  20px;
+}
+.pad_bot{
+    padding-bottom: 20px;
+}
+.bottom_spacer{
+    padding-bottom: 100px;
+}
+.top_spacer{
+    padding: 50px 0;
+}
+
+.container{
+    padding: 10px 100px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.align_center{
+    text-align: center;
+}
+.info{
+    color: white;
+}
+
+
+.bgwhite{
+    background-color: white;
+}
+.image{
+    width: 250px;
+}
+.container .image > img{
+    width: 100%;
+    object-fit : cover;
+}
+
+/* main menu */
+
+.main_menu > li > a{
+    padding: 25px 13px;
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+.main_menu >li{
+    text-transform: uppercase;
+    text-align: center;
+}
+.main_menu > li:last-child{
+    padding-right: 0;
+}
+.main_menu li:hover > a{
+    color: #FFBC06;
+}
+
+/* sub_menu */
+.sub_menu{
+    display: none;
+    position: absolute;
+    /* left: 0; */
+    z-index: 999;
+    /* top: 100%; */
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+    text-align: left;
+
+}
+.sub_menu >li{
+    padding: 10px;
+    padding-top: 20px;
+}
+.sub_menu li:hover > a{
+    color: #FFBC06;
+}
+.main_menu > li:hover .sub_menu{
+    display: block;
+}
+
+
+
+
+/* mega menu */
+
+/* .mega_menu{
+    display: none;
+    height: 400px;  
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    transform: translateY(40px);
+    transition: 0.3s;
+    border-top: 3px rgb(46, 46, 107) solid;
+    z-index: 1000;
+}
+.image{
+    position: relative;
+}
+.column{
+    width: 25%;
+}
+
+.column h3{
+    padding: 10px;
+    text-align: left;
+}
+.column ul li a{
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+ 
+.mega:hover .mega_menu{
+    display: block;
+    transform: translateY(0);
+
+}
+.main-menu li:not(.mega){
+    position: relative;
+} */
+
+
+
+/* slider */
+
+.slider{
+    height: 500px;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* card section */
+
+
+.box >a{
+    color : white;
+}
+.card{
+    background-color: white;
+    width: 30%;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.section{
+    padding: 100px;
+}
+.content{
+    justify-content: center;
+}
+.offer{
+    padding-bottom: 50px;
+}
+.card .image{
+    height: 200px;
+    width: 100%;
+}
+.card .image img{
+    border-radius: 10px 10px 0 0 ;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.course{
+    padding: 10px ;
+    justify-content: left;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.know{
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+.box{
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    width: 130px;
+    border-radius: 10px;
+}
+/* .line::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    color: #FFBC06;
+} */
+
+
+/* shape */
+
+.main_box{
+    padding-bottom: 100px;
+}
+.shape{
+    position: absolute;
+    width: 60%;
+    padding: 50px 100px;
+    font-size: large;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 0% 29% 28% 0% / 0% 45% 49% 0%  ;
+}
+.shape .pad_bot > span,
+.shape > p{
+    color: rgba(0,0,0,0.7);
+}
+.text_align{
+    text-align: left;
+}
+.staf_image{
+    z-index: -1;
+    right: 0;
+    height: 500px;
+    width: 563px;
+    align-content: center;
+}
+.staf_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.btn{
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.start{
+    display: flex;
+    justify-content: flex-start;
+}
+button{
+    padding: 10px 13px;
+    background-color: #FFBC06;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+}
+.btn > button > a{
+    color: white;
+}
+.align{
+    align-content: center;
+}
+
+/* start new */
+
+.student{
+    width: 100%;
+    height: 250px;
+}
+.student img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* layer */
+
+.layer .student img{
+    position: relative!important;
+}
+.slide_content{
+    position: absolute!important;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 250px;
+    z-index: 10;
+    padding: 30px 150px;
+    color: white;
+}
+.box1 h1{
+    display: flex;
+    justify-content: center;
+}
+
+/* start new-2 */
+
+.placement{
+    margin-bottom: 200px;
+}
+
+.section1,
+.section2{
+    height: 350px;
+    width: 500px;
+}
+.section1{
+    padding: 70px 0;
+}
+
+.img_holder{
+    height: 500px;
+    width: 500px;
+}
+.img_holder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img_holder{
+    position: relative;
+}
+.background_img{
+    position: absolute;
+    z-index: -1;
+}
+.sec_color{
+    color :#9A9A9A;
+}
+.round{
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+}
+.round > img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.testi_text >span > h3{
+    color: #003366;
+}
+.testi_text > span{
+    color: #FFBC06;
+}
+.testi_text > span > span{
+    color: #9A9A9A;
+}
+
+/* start new */
+.bggrey{
+    background-color: #DDDDDD;
+}
+.card_main .card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: large;
+}
+.card > button,
+.card > h3,
+.card > p{
+    padding: 10px 0;
+}
+.card >p{
+    color: #9A9A9A;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.circle1{
+    background-color: #F6475F;
+}
+.circle2{
+    background-color: #FFBC06;
+}
+.circle3{
+    background-color: #B3D369;
+}
+.circle4{
+    background-color: #554DA7;
+}
+.circle5{
+    background-color: #4382FF;
+}
+.circle6{
+    background-color: #F94FA4;
+}
+
+/* start new */
+
+.logo,.border{
+    border: 1px solid #DDDDDD;
+}
+.dem_course > div > a{
+    padding: 5px 5px;
+    color: black;
+    font-size: 14px;
+}
+.dem_course > div > a:hover .dem_course > div > a >span{
+    color: white;
+    background-color: #FFBC06;
+}

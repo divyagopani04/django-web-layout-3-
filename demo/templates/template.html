@@ -1,0 +1,459 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django web layout</title>
+
+    <link rel="stylesheet" href="{% static 'myfile.css' %}">
+</head>
+<body>
+    
+    <header>
+
+        <!-- start top header  -->
+        <div class="bgsky">
+            <div class="container">
+                <div class="top_header flex justify_between">
+                    <div class="info flex align_center">
+                        <div class="spacer">
+                            <span>info@cdmi.in</span>
+                        </div>
+                        <div>
+                            <span>verify certificate</span>
+                        </div>
+                    </div>
+                    <div class="info flex align_center">
+                        <div>
+                            <span>HAVE ANY QUESTION ? +91 90333 16003</span>
+                        </div>
+                    </div>
+                    <div class="info flex align_center">
+                        <div class="justify_between">
+                            <span>f</span>
+                            <span>tw</span>
+                            <span>in</span>
+                            <span>i</span>
+                            <span>wp</span>
+                            <span>y</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgwhite">
+            <div class="container flex justify_between">
+                <div class="image">
+                    <a href="#"></a><img src="{% static 'images/asset 0.svg' %}" alt=""></a>
+                </div>
+                <nav>
+                    <div class="nav_bar">
+                        <ul class="main_menu flex  align_center">
+                            <li><a href="#">HOME</a></li>
+                            <!-- <li class="mega">
+                                <a href="#">COURSES</a>
+                                <div class="mega_menu flex">
+                                    <div class="column">
+                                        <h3>DEVELOPMENT COURSES</h3>
+                                        <ul>
+                                            <li><a href="#">Master In Flutter Development</a></li>
+                                            <li><a href="#">Master In Android Development</a></li>
+                                            <li><a href="#">Master In Game Development</a></li>
+                                            <li><a href="#">Master In Full Stack Development
+                                            </a></li>
+                                            <li><a href="#">Master In Web Development</a></li>
+                                            <li><a href="#">Master In React Native</a></li>
+                                            <li><a href="#">Master In Data Science
+                                            </a></li>
+                                            <li><a href="#">Master In ASP.net development</a></li>
+                                            <li><a href="#">Master In Data Analytics</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <h3>DESIGN COURSES</h3>
+                                        <ul>
+                                            <li><a href="#">Master In Web Design</a></li>
+                                            <li><a href="#">Master in UI/UX Design</a></li>
+                                            <li><a href="#">Master In 2D/3D Animation</a></li>
+                                            <li><a href="#">Master In 2D Animation</a></li>
+                                            <li><a href="#">Master In 3D Animation</a></li>
+                                            <li><a href="#">Master In VFX</a></li>
+                                            <li><a href="#">Advance Graphics Design</a></li>
+                                            <li><a href="#">Video Editing</a></li>
+                                            <li><a href="#">2D/3D Game Design</a></li>
+                                            <li><a href="#">Maya Pro | 3Ds Max Pro</a></li>
+                                            <li><a href="#">Blender 3D Design</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <h3>PROGRAMING IT</h3>
+                                        <ul>
+                                            <li><a href="">C Programming</a></li>
+                                            <li><a href="">C++ Programming</a></li>
+                                            <li><a href="">Java Programming</a></li>
+                                            <li><a href="">IOS</a></li>
+                                            <li><a href="">Advance PHP</a></li>
+                                            <li><a href="">Laravel</a></li>
+                                            <li><a href="">Wordpress</a></li>
+                                            <li><a href="">CodeIgniter</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <h3>TRENDY COURSES</h3>
+                                        <ul>
+                                            <li><a href="">Node JS</a></li>
+                                            <li><a href="">Master In Blockchain</a></li>
+                                            <li><a href="">Angular JS</a></li>
+                                            <li><a href="">React JS</a></li>
+                                            <li><a href="">Ethical Hacking</a></li>
+                                            <li><a href="">Unity 3D</a></li>
+                                            <li><a href="">Python</a></li>
+                                            <li><a href="">React Native</a></li>
+                                            <li><a href="">Desktop App Development</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <h3>CIVIL-MECH. ENGINEERING</h3>
+                                        <ul>
+                                            <li><a href="#">AutoCAD Civil</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <h3>BUSINESS DEVELOPMENT</h3>
+                                        <ul>
+                                            <li><a href="#">Digital Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <h3>SHORT TERM COURSES</h3>
+                                        <ul>
+                                            <li><a href="#">Adobe Illustrator</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <li>
+                                <a href="#">ACTIVITIES</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Events</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">BLOGS</a>
+                            </li>
+                            <li>
+                                <a href="#">KNOW US</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Success Stories</a></li>
+                                    <li><a href="#">Placement Partners</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">GETIN TOUCH</a>
+                            </li>
+                            <li>
+                                <a href="#">STUDENT ZONE</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">Student Login</a></li>
+                                    <li><a href="#">Showcase</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+               
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider">
+            <img src="{% static 'images/asset 6.webp' %}" alt="">
+        </div>
+
+        <div class="section">
+            <div>
+                <div class="content flex">
+                    <div class="line"></div>
+                    <span>CREATIVE COURSE</span>
+                </div>
+                <div class="content flex offer">
+                    <h1>OFFERED COURSES</h1>
+                </div>
+            </div>
+
+            <div class="card_section flex justify_between spacer_top_bottom">
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static 'images/asset 11.webp' %}" alt="">
+                    </div>
+                    <div class="course"><h3>Development Courses</h3></div>
+                    <div class="know flex">
+                        <div class="box">
+                            <a href="#">Know More..!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static 'images/asset 14.webp' %}" alt="">
+                    </div>
+                    <div class="course"><h3>Design Courses</h3></div>
+                    <div class="know flex">
+                        <div class="box">
+                            <a href="#">Know More..!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static 'images/asset 18.webp' %}" alt="">
+                    </div>
+                    <div class="course"><h3>Programming IT</h3></div>
+                    <div class="know flex">
+                        <div class="box">
+                            <a href="#">Know More..!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_section flex justify_between spacer_top_bottom">
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static 'images/asset 21.webp' %}" alt="">
+                    </div>
+                    <div class="course"><h3>Trendy Courses</h3></div>
+                    <div class="know flex">
+                        <div class="box">
+                            <a href="#">Know More..!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static 'images/asset 24.webp' %}" alt="">
+                    </div>
+                    <div class="course"><h3>Civil-Mech. Engineering</h3></div>
+                    <div class="know flex">
+                        <div class="box">
+                            <a href="#">Know More..!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static 'images/asset 26.webp' %}" alt="">
+                    </div>
+                    <div class="course"><h3>Business Development</h3></div>
+                    <div class="know flex">
+                        <div class="box">
+                            <a href="#">Know More..!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button><a href="#">View All Courses</a></button>
+            </div>
+        </div>
+        
+    </main>
+    <div class="justify_between flex bottom_spacer">
+        <div class="main_box">
+            <div class="shape">
+                <div class="pad_bot">
+                    <span>About Us</span>
+                </div>
+                <div class="pad_bot">
+                    <h3>IT CAREER IN SURAT, MOVING TOWARDS THE BETTER TOMORROW!</h3>
+                </div>
+                <p>
+                    Creative Design & Multimedia Institute(CDMI) is a reputed training institute in Surat for web design, Game design,Mobile App Development, Game Development ,Video Editing & All types of IT Courses with 9 years of full-fledged, result-oriented training experience. We stepped in the market in 2014 with the goal to help students, working professionals and other interested candidates get that dream job or open that desired freelance business in some of the most popular Computer / IT fields. Our aim is to ease the hiring process for businesses and organizations by providing work-ready professionals who can contribute greatly to their success. Since then, we have worked hard to achieve this goal and dedicated our time and resources to train students extensively.
+                </p>
+                <div class="btn start">
+                    <button><a href="#">Enroll Now..!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="staf_image top_spacer">
+            <img src="{% static 'images/asset 29.jpeg' %}" alt="">
+        </div>
+    </div>
+
+    <!-- start new -->
+    <div class="layer bottom_spacer">
+        <div class="slide">
+            <div class="slide_content flex justify_between align">
+                <div class="box1">
+                    <h1>14000+</h1>
+                    <h3>HAPPY STUDENTS</h3>
+                </div>
+                <div class="box1">
+                    <h1>10+</h1>
+                    <h3>CERTIFICATION APPROVAL</h3>
+                </div>
+                <div class="box1">
+                    <h1>70+</h1>
+                    <h3>CERTIFIED TEACHERS</h3>
+                </div>
+                <div class="box1">
+                    <h1>9000+</h1>
+                    <h3>STUDENTS PLACED</h3>
+                </div>
+            </div>
+        </div>
+        <div class="student">
+            <img src="{% static 'images/asset 52.jpeg' %}" alt="">
+        </div>
+    </div>
+
+    <!-- start new -->
+
+    <div class="placement flex justify_between container">
+        <div class="section1">
+            <div class="pad_bot sec_color">
+                <span>HAPPY STUDENTS</span>
+            </div>
+            <div class="pad_bot">
+                <h1>ALUMNI SPEAK</h1>
+            </div>
+            <p class="sec_color pad_bot">Good institute and excellent presentation skills and if any doubts regarding topics they will clear immediately.</p>
+            <div class="testimonial flex">
+                <div class="flex align">
+                    <button class="round">
+                        <img src="{% static 'images/asset 37.jpeg' %}" alt="">
+                    </button>
+                </div>
+                <div class="testi_text flex align">
+                    <span> <h3>pabadiya jaimin</h3> UI/UX Designer <span> @ ViPrak Web Solutions </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="img_holder">
+                <div class="background_img">
+                    <img src="{% static 'images/asset 54.jpeg' %}" alt="">
+                </div>
+                <div class="testimonialshape">
+                    <img src="{% static 'images/asset 39.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- start new -->
+    <div class="bggrey">
+        <div class="container">
+            <div>
+                <div class="content flex">
+                    <div class="line"></div>
+                    <span>CREATIVE COURSE</span>
+                </div>
+                <div class="content flex offer">
+                    <h1>OFFERED COURSES</h1>
+                </div>
+            </div>
+
+            <div class="card_main">
+                <div class="container">
+                    <div class="card_sec flex justify_between pad_bot">
+                        <div class="card">
+                            <button class="circle circle1"></button>
+                            <h3>Industry Experts As Trainers</h3>
+                            <p>Our trainers have 5+ years of industry experience coupled with extensive research and analysis.</p>
+                        </div>
+                        <div class="card">
+                            <button class="circle circle2"></button>
+                            <h3>Latest Curriculum</h3>
+                            <p>We Provides latest curriculum for all courses which designed in such a way that Students will get full knowledge within a short time.</p>
+                        </div>
+                        <div class="card">
+                            <button class="circle circle3"></button>
+                            <h3>Latest Technology</h3>
+                            <p>We strive to let you have a solid foundational knowledge of technologies shaping the IT World today.</p>
+                        </div>
+                    </div>
+                    <div class="card_sec flex justify_between">
+                        <div class="card">
+                            <button class="circle circle4"></button>
+                            <h3>Interview Assistance</h3>
+                            <p>At the end of each training,our training instructor will go through the possible technical questions you may be asked.</p>
+                        </div>
+                        <div class="card">
+                            <button class="circle circle5"></button>
+                            <h3>Free Upgradation</h3>
+                            <p>We will be provided free upgradation for any newer version of the course you have.</p>
+                        </div>
+                        <div class="card">
+                            <button class="circle circle6"></button>
+                            <h3>Lifetime Support</h3>
+                            <p>We will provide you lifetime support on all the courses you learned from us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start new -->
+
+    <div class="requiter">
+        <div class="container">
+            <div class="top_spacer spacer_top_bottom">
+                <div class="content flex">
+                    <div class="line"></div>
+                    <span>STUDENT PLACEMENT</span>
+                </div>
+                <div class="content flex offer">
+                    <h1>OUR RECRUITMENT PARTNERS</h1>
+                </div>
+            </div>
+            <div class="company_logo flex justify_between pad_bot">
+                <div class="logo">
+                    <img src="{% static 'images/asset 40.png' %}" alt="">
+                </div>
+                <div class="logo">
+                    <img src="{% static 'images/asset 41.png' %}" alt="">
+                </div>
+                <div class="logo">
+                    <img src="{% static 'images/asset 42.png' %}" alt="">
+                </div>
+                <div class="logo">
+                    <img src="{% static 'images/asset 43.png' %}" alt="">
+                </div>
+                <div class="logo">
+                    <img src="{% static 'images/asset 44.png' %}" alt="">
+                </div>
+                <div class="logo">
+                    <img src="{% static 'images/asset 45.png' %}" alt="">
+                </div>
+            </div>
+            <div class="dem_course top_spacer">
+                <h2 class="pad_bot">Our Demanded Course -</h2>
+                <div class="flex">
+                    <a href="#"><span class="border">Android App Development Institute</span></a>
+                    <a href="#"><span class="border">Creo Parametrics Mechanical Training Course </span></a>
+                    <a href="#"><span class="border">Python Training Institute In Mota Varachha</span></a>
+                    <a href="#"><span class="border">Best Photoshop Training Institute</span></a>
+                    <a href="#"><span class="border"> Laravel Training Course</span></a>
+                    <a href="#"><span class="border">Flutter Training Institute In Katargam</span></a>
+                    <a href="#"><span class="border">Web Design Course In Surat</span></a>
+                    <a href="#"><span class="border">Best Php Training In Mota Varachha</span></a>
+                    <a href="#"><span class="border">Android Training Course Institute</span></a>
+                    <a href="#"><span class="border">Game Development Class In Katargam</span></a>
+                    <a href="#"><span class="border">Unity 3d Training Institute In Katargam</span></a>
+                    <a href="#"><span class="border">Advance Nodejs Training Institute In Surat</span></a>
+                    <a href="#"><span class="border">Unity 3d Training Institute In Surat</span></a>
+                    <a href="#"><span class="border">Web Design Course Institute</span></a>
+                    <a href="#"><span class="border">Short Term Course Training Institute</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
